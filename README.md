@@ -1,7 +1,7 @@
 # Udemy Go Web
 This project is a Go Web project created during Udemy Video.
 
-![N|](https://flask.palletsprojects.com/en/2.1.x/_images/flask-logo.png)
+![N|](https://pkg.go.dev/static/shared/gopher/package-search-700x300.jpeg)
 
 
 Using the template, pages containing simple data insertion, deletion and updating were created.
