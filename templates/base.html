@@ -1,0 +1,16 @@
+{{ define "base" }}
+{{ template  "header"  .}}
+
+<div style="overflow:auto">
+  
+  {{ template  "menu" . }}
+ 
+  <div class="main">
+    {{ template  "content" . }}
+  </div>
+
+  {{ template  "right" .}}
+
+</div>
+{{ template  "footer" .}}
+{{end}}

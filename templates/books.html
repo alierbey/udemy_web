@@ -1,0 +1,32 @@
+{{ define  "content"  }}
+
+<h3>Books</h3>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Year</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+    {{range .Books}}
+    <tr>
+        <td>{{.Id}}</td>
+        <td><a href="detay/{{.Id}}">{{.Name}}</a></td>
+        <td>{{.Author}}</td>
+        <td>{{.PublicationDate}}</td>
+        <td><a href="edit/{{.Id}}">Edit</a></td>
+        <td><a href="delete/{{.Id}}">Delete</a></td>
+    </tr>
+    {{end}}
+
+
+
+
+</table>
+{{end}}
+
+
+

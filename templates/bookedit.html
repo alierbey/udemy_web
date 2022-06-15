@@ -1,0 +1,39 @@
+{{ define  "content"  }}
+<h3>Book Edit </h3>
+
+
+<form method="post">
+    <input type="hidden" name="id" value="{{.Id}}" >
+    <table>
+        <tr>
+            <td><label>Adı : </label></td>
+            <td> <input type="text" name="name" value="{{.Name}}" ></td>
+        </tr>
+        <tr>
+            <td><label>Yazar : </label></td>
+            <td> <input type="text" name="author" value="{{.Author}}"></td>
+        </tr>
+        <tr>
+            <td><label>Yıl : </label></td>
+            <td>  <input type="text" name="publication_date" value="{{.PublicationDate}}"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>  <input type="submit"></td>
+        </tr>
+    </table>
+
+
+   
+    
+    
+</form>
+
+
+
+
+
+{{end}}
+
+
+

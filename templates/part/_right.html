@@ -1,0 +1,15 @@
+{{ define "right"}}
+<div class="right">
+
+  {{range .Categories}}
+
+  <a href="/books/category/{{.CategoryId}}">
+{{.CategoryName}}</a><br>
+{{end}}
+
+{{if not .Categories}}
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    {{end}}
+  </div>
+{{end}}
